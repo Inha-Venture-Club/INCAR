@@ -1,0 +1,463 @@
+<resources>
+    <string name="app_name">INCAR</string>
+    <string name="navigation_drawer_open" translatable="false">Drawer Open</string>
+    <string name="navigation_drawer_close" translatable="false">Drawer Closed</string>
+    <string name="password">password</string>
+    <string name="id">id</string>
+    <string name="incar_login">INCAR Login</string>
+    <string name="find_id_and_password">Find ID/Password</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="vision">Make commuting to school easier and more enjoyable</string>
+    <string name="select_starting_point">Select your starting point</string>
+    <string name="select_destination">Select your destination</string>
+    <string name="select_options">Select Options</string>
+    <string name="select_job">Select your job</string>
+    <string name="student">Inha University Student</string>
+    <string name="professor">Inha University Professor</string>
+    <string name="faculty">Inha University Faculty</string>
+    <string name="choose">Choose</string>
+    <string name="enter_login_info">Enter Login Information</string>
+    <string name="confirm_password">Comfirm Password</string>
+    <string name="email">e-mail</string>
+    <string name="enter_personal_info">Enter your personal information</string>
+    <string name="real_name">name(real name)</string>
+    <string name="department">Department</string>
+    <string name="introduction">Introduction</string>
+    <string name="agreement_for_terms">I agree to all of INCAR\'s consolidated terms.</string>
+    <string name="view_terms">View Terms</string>
+    <string name="provision1">인카 통합약관에 모두 동의합니다.</string>
+    <string name="provision2">인카 통합서비스이용약관 동의(필수)</string>
+    <string name="provision3">인카 통합개인정보처리방침 동의(필수)</string>
+    <string name="provision4">인카 통합커뮤니티이용규칙 확인(필수)</string>
+    <string name="provision">약관보기</string>
+    <string name="provision0">약관</string>
+    <string name="carpoolregister_title">카풀 등록하기</string>
+    <string name="carpoolregister_type_type">유형</string>
+    <string name="carpoolregister_type_purpose">목적</string>
+    <string name="carpoolregister_type_stopover">경유지</string>
+    <string name="carpoolregister_type_departure">출발지</string>
+    <string name="carpoolregister_type_destination">도착지</string>
+    <string name="carpoolregister_type_next">다음</string>
+    <string name="carpoolregister_content_frequency">카풀 빈도</string>
+    <string name="carpoolregister_content_time">출발 일시</string>
+    <string name="carpoolregister_content_people">인원</string>
+    <string name="carpoolregister_content_cost">금액</string>
+    <string name="carpoolregister_content_notice">* 정기카풀은 예약이 완료될 때까지 노출됩니다.</string>
+    <string name="carpoolregister_content_costunit">원/인당</string>
+    <string name="carpoolregister_content_costnotice1">* 1인당 이용금액을 입력해주세요.</string>
+    <string name="carpoolregister_content_costnotice2">* 정기카풀의 경우, 1회 이용금액을 입력해주세요.</string>
+    <string name="carpoolregister_content_timenotice">출발날짜와 시간을 선택해주세요.</string>
+    <string name="carpoolregister_content_peopleonotice">카풀을 이용할 인원을 선택해주세요.</string>
+    <string name="carpoolregister_constraint_insurance">대인배상</string>
+    <string name="carpoolregister_constraint_smoking">차내 흡연여부</string>
+    <string name="carpoolregister_constraint_woman">여성제한</string>
+    <string name="carpoolregister_constraint_more">추가내용</string>
+    <string name="carpoolregister_constraint_womannotice">* 체크시 해당 카풀은 여성에게만 보입니다.</string>
+    <string name="carpoolregister_constraint_morenotice">카풀 이용시, 추가적으로 요청할 내용을 입력해주세요.</string>
+    <string name="carpoolregister_constraint_onlywoman">여성전용</string>
+    <string name="carpoolregister_constraint_insuranceyes">가입</string>
+    <string name="carpoolregister_constraint_insuranceno">미가입</string>
+    <string name="carpoolregister_constraint_insuranceyesno">모름</string>
+    <string name="carpoolregister_register">등록</string>
+    <string name="carpoolregister_cartype">차종</string>
+    <string name="carpoolregister_cartypenotice">*예시: 기아 모닝</string>
+    <string name="received_request">Received Request</string>
+    <string name="sent_request">Sent Request</string>
+    <string name="assessment">Assessment</string>
+    <string name="posted_writing">Posted Writing</string>
+    <string name="get_in">Get In</string>
+    <string name="give_me_a_ride">Give Me a Ride</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <!--<string name="hello_blank_fragment">Hello blank fragment</string>-->
+    <string name="when_time">Time</string>
+    <string name="kimname">Kim XX</string>
+    <string name="man">Man</string>
+    <string name="woman">Woman</string>
+    <string name="birth">Birth</string>
+    <string name="in_provision">In Provision</string>
+    <string name="provision_content">Provision Content</string>
+    <string name="find_password">Find Password</string>
+
+    <array name="region">
+        <item>서울</item>
+        <item>인천</item>
+        <item>경기도</item>
+        <item>대전</item>
+        <item>광주</item>
+
+        <item>울산</item>
+        <item>부산</item>
+        <item>대구</item>
+        <item>세종</item>
+        <item>제주</item>
+
+        <item>강원도</item>
+        <item>충청북도</item>
+        <item>충청남도</item>
+        <item>전라북도</item>
+        <item>전라남도</item>
+
+        <item>경상북도</item>
+        <item>경상남도</item>
+    </array>
+
+    <!-- 0. 서울 -->
+    <array name="gu0">
+        <item>종로구</item>
+        <item>중구</item>
+        <item>용산구</item>
+        <item>성동구</item>
+        <item>광진구</item>
+
+        <item>동대문구</item>
+        <item>중랑구</item>
+        <item>성북구</item>
+        <item>강북구</item>
+        <item>도봉구</item>
+
+        <item>노원구</item>
+        <item>은평구</item>
+        <item>서대문구</item>
+        <item>마포구</item>
+        <item>양천구</item>
+
+        <item>강서구</item>
+        <item>구로구</item>
+        <item>금천구</item>
+        <item>영등포구</item>
+        <item>동작구</item>
+
+        <item>관악구</item>
+        <item>서초구</item>
+        <item>강남구</item>
+        <item>송파구</item>
+        <item>강동구</item>
+    </array>
+    <!-- 1. 인천 -->
+    <array name="gu1">
+        <item>중구</item>
+        <item>동구</item>
+        <item>남구</item>
+        <item>미추홀구</item>
+        <item>연수구</item>
+
+        <item>남동구</item>
+        <item>부평구</item>
+        <item>계양구</item>
+        <item>서구</item>
+        <item>강화군</item>
+
+        <item>옹진군</item>
+    </array>
+    <!-- 2. 경기도 -->
+    <array name="gu2">
+        <item>수원시</item>
+        <item>성남시</item>
+        <item>고양시</item>
+        <item>용인시</item>
+        <item>부천시</item>
+
+        <item>안산시</item>
+        <item>안양시</item>
+        <item>남양주시</item>
+        <item>화성시</item>
+        <item>평택시</item>
+
+        <item>의정부시</item>
+        <item>시흥시</item>
+        <item>파주시</item>
+        <item>광명시</item>
+        <item>김포시</item>
+
+        <item>군포시</item>
+        <item>광주시</item>
+        <item>이천시</item>
+        <item>양주시</item>
+        <item>오산시</item>
+
+        <item>구리시</item>
+        <item>안성시</item>
+        <item>포천시</item>
+        <item>의왕시</item>
+        <item>하남시</item>
+
+        <item>여주시</item>
+        <item>여주군</item>
+        <item>양평군</item>
+        <item>동두천시</item>
+        <item>과천시</item>
+
+        <item>가평군</item>
+        <item>연천군</item>
+    </array>
+    <!-- 3. 대전 -->
+    <array name="gu3">
+        <item>동구</item>
+        <item>중구</item>
+        <item>서구</item>
+        <item>유성구</item>
+        <item>대덕구</item>
+    </array>
+    <!-- 4. 광주 -->
+    <array name="gu4">
+        <item>동구</item>
+        <item>서구</item>
+        <item>남구</item>
+        <item>북구</item>
+        <item>광산구</item>
+    </array>
+
+    <!-- 5. 울산 -->
+    <array name="gu5">
+        <item>중구</item>
+        <item>남구</item>
+        <item>동구</item>
+        <item>북구</item>
+        <item>울주군</item>
+    </array>
+    <!-- 6. 부산 -->
+    <array name="gu6">
+        <item>중구</item>
+        <item>서구</item>
+        <item>동구</item>
+        <item>영도구</item>
+        <item>부산진구</item>
+
+        <item>동래구</item>
+        <item>남구</item>
+        <item>북구</item>
+        <item>해운대구</item>
+        <item>사하구</item>
+
+        <item>금정구</item>
+        <item>강서구</item>
+        <item>연제구</item>
+        <item>수영구</item>
+        <item>사상구</item>
+
+        <item>기장군</item>
+    </array>
+    <!-- 7. 대구 -->
+    <array name="gu7">
+        <item>중구</item>
+        <item>동구</item>
+        <item>서구</item>
+        <item>남구</item>
+        <item>북구</item>
+
+        <item>수성구</item>
+        <item>달서구</item>
+        <item>달성군</item>
+    </array>
+    <!-- 8. 세종 -->
+    <array name="gu8">
+        <item>세종특별자치시</item>
+    </array>
+    <!-- 9. 제주 -->
+    <array name="gu9">
+        <item>제주시</item>
+        <item>서귀포시</item>
+        <item>북제주군</item>
+        <item>남제주군</item>
+    </array>
+
+    <!-- 10. 강원도 -->
+    <array name="gu10">
+        <item>춘천시</item>
+        <item>원주시</item>
+        <item>강릉시</item>
+        <item>동해시</item>
+        <item>태백시</item>
+
+        <item>속초시</item>
+        <item>삼척시</item>
+        <item>홍천군</item>
+        <item>횡성군</item>
+        <item>영월군</item>
+
+        <item>평창군</item>
+        <item>정선군</item>
+        <item>철원군</item>
+        <item>화천군</item>
+        <item>양구군</item>
+
+        <item>인제군</item>
+        <item>고성군</item>
+        <item>양양군</item>
+    </array>
+    <!-- 11. 충청북도 -->
+    <array name="gu11">
+        <item>청주시</item>
+        <item>충주시</item>
+        <item>제천시</item>
+        <item>청원군</item>
+        <item>보은군</item>
+
+        <item>옥천군</item>
+        <item>영동군</item>
+        <item>진천군</item>
+        <item>괴산군</item>
+        <item>음성군</item>
+
+        <item>단양군</item>
+        <item>증평군</item>
+    </array>
+    <!-- 12. 충청남도 -->
+    <array name="gu12">
+        <item>천안시</item>
+        <item>공주시</item>
+        <item>보령시</item>
+        <item>아산시</item>
+        <item>서산시</item>
+
+        <item>논산시</item>
+        <item>계룡시</item>
+        <item>당진시</item>
+        <item>당진군</item>
+        <item>금산군</item>
+
+        <item>연기군</item>
+        <item>부여군</item>
+        <item>서천군</item>
+        <item>청양군</item>
+        <item>홍성군</item>
+
+        <item>예산군</item>
+        <item>태안군</item>
+    </array>
+    <!-- 13. 전라북도 -->
+    <array name="gu13">
+        <item>전주시</item>
+        <item>군산시</item>
+        <item>익산시</item>
+        <item>정읍시</item>
+        <item>남원시</item>
+
+        <item>김제시</item>
+        <item>완주군</item>
+        <item>진안군</item>
+        <item>무주군</item>
+        <item>장수군</item>
+
+        <item>임실군</item>
+        <item>순창군</item>
+        <item>고창군</item>
+        <item>부안군</item>
+    </array>
+    <!-- 14. 전라남도 -->
+    <array name="gu14">
+        <item>목포시</item>
+        <item>여수시</item>
+        <item>순천시</item>
+        <item>나주시</item>
+        <item>광양시</item>
+
+        <item>담양군</item>
+        <item>곡성군</item>
+        <item>구례군</item>
+        <item>고흥군</item>
+        <item>보성군</item>
+
+        <item>화순군</item>
+        <item>장흥군</item>
+        <item>강진군</item>
+        <item>해남군</item>
+        <item>영암군</item>
+
+        <item>무안군</item>
+        <item>함평군</item>
+    </array>
+
+    <!-- 15. 경상북도 -->
+    <array name="gu15">
+        <item>포항시</item>
+        <item>경주시</item>
+        <item>김천시</item>
+        <item>안동시</item>
+        <item>구미시</item>
+
+        <item>영주시</item>
+        <item>영천시</item>
+        <item>상주시</item>
+        <item>문경시</item>
+        <item>경산시</item>
+
+        <item>군위군</item>
+        <item>의성군</item>
+        <item>청송군</item>
+        <item>영양군</item>
+        <item>영덕군</item>
+
+        <item>청도군</item>
+        <item>고령군</item>
+        <item>성주군</item>
+        <item>칠곡군</item>
+        <item>예천군</item>
+
+        <item>봉화군</item>
+        <item>울진군</item>
+        <item>울릉군</item>
+    </array>
+    <!-- 16. 경상남도 -->
+    <array name="gu16">
+        <item>창원시</item>
+        <item>마산시</item>
+        <item>진주시</item>
+        <item>진해시</item>
+        <item>통영시</item>
+
+        <item>사천시</item>
+        <item>김해시</item>
+        <item>밀양시</item>
+        <item>거제시</item>
+        <item>양산시</item>
+
+        <item>의령군</item>
+        <item>함안군</item>
+        <item>창녕군</item>
+        <item>고성군</item>
+        <item>남해군</item>
+
+        <item>하동군</item>
+        <item>산청군</item>
+        <item>함양군</item>
+        <item>거창군</item>
+        <item>합천군</item>
+    </array>
+
+    <array name="guArray">
+        <item>@array/gu0</item>
+        <item>@array/gu1</item>
+        <item>@array/gu2</item>
+        <item>@array/gu3</item>
+        <item>@array/gu4</item>
+    </array>
+    <string name="carpoolregister_hotlist">즐겨찾기 불러오기</string>
+    <string name="cacaomap_detail_address_choice">상세 주소 선택</string>
+    <string name="carpoolregister_choice">선택</string>
+    <string name="terms">약관</string>
+    <string name="popup_check">확인</string>
+    <string name="title">Content</string>
+    <string name="email_certification">Email Certification</string>
+    <string name="go_login_screen">Go Login Screen</string>
+    <string name="password_change">Password Change</string>
+    <string name="password_change1">Password Change1</string>
+    <string name="password_change_comfirm">Password_Change_Comfirm</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="pm_request_notice">The request received is automatically deleted after 48 hours of arrival time of the carpool and cannot be evaluated.</string>
+    <string name="Message">message</string>
+    <string name="club_introduction">Club_Introcution</string>
+    <string name="provision_content2">provision_content2</string>
+    <string name="provision_content3">provision_content3</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+
+    <!-- TODO: Remove or change this placeholder text -->
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <!--    <string name="hello_blank_fragment">Hello blank fragment</string>-->
+</resources>
+

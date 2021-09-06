@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp">
+
+    <TextView
+        android:id="@+id/tv_yourchattingitem_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:layout_toStartOf="@+id/tv_yourchattingitem_date"
+        android:background="@drawable/drawable_yourchattingitem"
+        android:padding="15dp"
+        android:text="안녕하세요~ㅇ문ㅇ미언미어미너이머이머니어민어ㅣㅁㅇㄴ머ㅣㅇㅁ이ㅓㅁ니어미너이머ㅣㄴ어ㅓㅇㄴ미ㅓ이먼이먼이멍ㅁ" />
+
+    <TextView
+        android:id="@+id/tv_yourchattingitem_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:text="오후 6:59" />
+
+</RelativeLayout>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="10dp"
+    android:layout_marginEnd="10dp"
+    android:layout_marginTop="10dp"
+    android:background="@drawable/round_corner"
+    >
+
+    <LinearLayout
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_gravity="center"
+            android:id="@+id/request_profile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@mipmap/icon_user"
+            android:contentDescription="@mipmap/icon_user"
+            android:layout_marginTop="5dp"/>
+
+        <TextView
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:id="@+id/request_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="12180000" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginStart="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_marginTop="2dp"
+            android:id="@+id/request_departure"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/carpoolregister_type_departure" />
+
+        <TextView
+            android:layout_marginTop="2dp"
+            android:id="@+id/request_destination"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/carpoolregister_type_destination" />
+
+        <TextView
+            android:layout_marginTop="2dp"
+            android:id="@+id/request_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="날짜" />
+
+        <TextView
+            android:layout_marginTop="2dp"
+            android:id="@+id/request_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="시간" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:gravity="end"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/request_reviewBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/round_corner_white"
+            android:text="리뷰입력" />
+    </LinearLayout>
+
+
+</LinearLayout>

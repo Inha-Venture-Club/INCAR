@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        android:orientation="vertical"
+        android:weightSum="45"
+        tools:context=".activity.MainPageActivity">
+
+        <!-- top section with menu and logo -->
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:layout_marginStart="10dp"
+
+            android:layout_weight="39">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="35dp"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="20dp"
+                        android:background="@drawable/menu_management" />
+                    <!-- app:srcCompat="@drawable/inven_logo"-->
+
+
+                    <TextView
+                        android:id="@+id/tv_programmer"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="20dp"
+                        android:text="개발자 소개"
+                        android:textColor="#000000"
+                        android:textSize="30sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="30dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:background="@color/colorGrey"
+                        android:text="개발자 소개"
+                        android:textColor="#000000"
+                        android:textSize="25sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="25dp"
+                        android:text="소속"
+                        android:textColor="#000000"
+                        android:textSize="25dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_gravity="center"
+                            android:background="@drawable/inven_logo"
+
+                            />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginTop="5dp"
+                            android:text="인하벤처클럽"
+                            android:textColor="#000000"
+                            android:textSize="17dp" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="25dp"
+                        android:text="개발자"
+                        android:textColor="#000000"
+                        android:textSize="25dp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="10dp"
+                        android:text="컴퓨터공학과     14 박주원"
+                        android:textColor="#000000"
+                        android:textSize="17dp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="10dp"
+                        android:text="컴퓨터공학과     16 김진우"
+                        android:textColor="#000000"
+                        android:textSize="17dp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="10dp"
+                        android:text="정보통신공학과 18 홍다솔"
+                        android:textColor="#000000"
+                        android:textSize="17dp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="10dp"
+                        android:text="정보통신공학과 18 조민경"
+                        android:textColor="#000000"
+                        android:textSize="17dp" />
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="25dp"
+                        android:text="동아리 소개"
+                        android:textColor="#000000"
+                        android:textSize="25dp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="10dp"
+                        android:text="1997.05.25에 설립되어 인하대학교의 창업을 희망하는
+예비창업자들의 능동적 교류와 협력을 통해 창의적인 아이디어를
+경쟁력 있는 창업 아이템으로 재구성하고 학문적 이론에 국한되지 않고
+실전 창업이라는 가시적인 결과를 만들어 청년 창업의 성공적 부흥을 목표로 하고있습니다.
+동아리 내에서 창업의 꿈을 가진 학우들에게 모의 창업의 기회를 지원하고,
+실전창업에서도 귀중한 자산이 될 수 있도록 수많은 경험들을 함께 만들어 나가고 있습니다."
+                        android:textColor="#000000"
+                        android:textSize="17dp" />
+
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</layout>

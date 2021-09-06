@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:background="@color/mainGrey">
+
+    <!-- 출발지 및 도착지 검색창 -->
+    <LinearLayout
+        android:id="@+id/searchbox_relativelayout"
+        style="@style/searchingbox_parentbox"
+        android:weightSum="10"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            style="@style/searchingbox_boxes">
+            <!-- 출발지 선택 -->
+            <LinearLayout
+                android:id="@+id/layout_searchingbox_departbox"
+                style="@style/searchingbox_box">
+
+                <ImageView
+                    style="@style/searchingbox_iconinbox"
+                    android:background="@drawable/icon_map_pin_blue" />
+
+                <HorizontalScrollView
+                    android:id="@+id/hsv_depart"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical">
+
+                    <LinearLayout
+                        android:id="@+id/layout_hsv_depart"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                    </LinearLayout>
+                </HorizontalScrollView>
+
+
+            </LinearLayout>
+            <!-- 도착지 선택 -->
+            <LinearLayout
+                style="@style/searchingbox_box">
+
+                <ImageView
+                    style="@style/searchingbox_iconinbox"
+                    android:background="@drawable/icon_map_pin_red" />
+
+                <HorizontalScrollView
+                    android:id="@+id/hsv_arrive"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical">
+
+                    <LinearLayout
+                        android:id="@+id/layout_hsv_arrive"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                    </LinearLayout>
+                </HorizontalScrollView>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/btn_searchingbox"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_toEndOf="@+id/linearlayout_search"
+            android:background="@drawable/icon_search_button" />
+
+    </LinearLayout>
+    <!-- /출발지 및 도착지 검색창 -->
+
+
+</LinearLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+<FrameLayout
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/posting_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never" />
+
+    <TextView
+        android:id="@+id/posting_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="인터넷 연결이 끊어졌습니다."
+        android:textSize="20sp"
+        android:layout_gravity="center"/>
+</FrameLayout>
+</layout>

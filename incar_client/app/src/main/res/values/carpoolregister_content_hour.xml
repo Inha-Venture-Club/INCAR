@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="시">
+        <item>12시</item>
+        <item>01시</item>
+        <item>02시</item>
+        <item>03시</item>
+        <item>04시</item>
+        <item>05시</item>
+        <item>06시</item>
+        <item>07시</item>
+        <item>08시</item>
+        <item>09시</item>
+        <item>10시</item>
+        <item>11시</item>
+    </string-array>
+
+</resources>

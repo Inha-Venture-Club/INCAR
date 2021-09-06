@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="activity"
+            type="ac.inhaventureclub.incar.activity.Provision" />
+    </data>
+
+        <!-- title section -->
+        <ScrollView
+            android:id="@+id/scrollview1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:weightSum="12"
+                tools:context=".activity.SignUpActivity">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/linearLayout2"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/tv_signUpTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:text="@string/provision"
+                        android:textColor="#000000"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageButton
+                        android:id="@+id/btn_cancel_provision"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_marginEnd="20dp"
+                        android:background="@drawable/icon_cancel"
+                        android:gravity="right"
+                        android:stateListAnimator="@null"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <TextView
+                        android:id="@+id/tv_provision0"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:text="@string/provision0"
+                        android:textColor="#000000"
+                        android:textSize="20sp" />
+
+
+                <ScrollView
+                    android:id="@+id/scrollview2"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="30dp"
+                    android:layout_height="125dp">
+
+                        <!-- -->
+                        <TextView
+                            android:id="@+id/tv_text"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginEnd="10dp"
+                            android:background="@color/colorGrey"
+                            android:text="@string/provision_content"
+                            android:textColor="#000000"
+                            android:textSize="15sp" />
+
+                </ScrollView>
+
+                    <ScrollView
+                        android:id="@+id/scrollview3"
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="30dp"
+                        android:layout_height="125dp">
+
+                            <!-- -->
+                            <TextView
+                                android:id="@+id/tv_text2"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginStart="10dp"
+                                android:layout_marginEnd="10dp"
+                                android:background="@color/colorGrey"
+                                android:text="@string/provision_content2"
+                                android:textColor="#000000"
+                                android:textSize="15sp" />
+
+                    </ScrollView>
+
+
+                    <CheckBox
+                        android:id="@+id/checkBox1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="70dp"
+                        android:layout_marginTop="30dp"
+                        android:text="@string/provision1" />
+
+                    <CheckBox
+                        android:id="@+id/checkBox2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="70dp"
+                        android:text="@string/provision2" />
+
+                    <CheckBox
+                        android:id="@+id/checkBox3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="70dp"
+                        android:text="@string/provision3" />
+
+                    <Button
+                        android:id="@+id/btn_certification"
+                        android:layout_width="250dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="20dp"
+                        android:background="@drawable/button_00dbd8"
+                        android:text="확인"
+                        android:textColor="#FFFFFF"
+                        android:textSize="18dp"
+                        android:textStyle="bold" />
+
+
+            </LinearLayout>
+        </ScrollView>
+
+        <!-- content -->
+
+        <!-- content section -->
+
+</layout>

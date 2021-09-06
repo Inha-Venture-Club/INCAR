@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="sort_order">
+        <item>빠른출발순</item>
+        <item>느린출발순</item>
+    </string-array>
+</resources>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view"    >
+
+    <group>
+        <item
+            android:id="@+id/item_drawer_newpost"
+            android:icon="@drawable/menu_enrollment"
+            android:title="등록하기"/>
+        <item
+            android:id="@+id/item_drawer_postmanagement"
+            android:icon="@drawable/menu_management"
+            android:title="글관리"/>
+        <item
+            android:id="@+id/item_drawer_notice"
+            android:icon="@drawable/menu_notice"
+            android:title="공지사항"/>
+        <item
+            android:id="@+id/item_drawer_settings"
+            android:icon="@drawable/menu_setting"
+            android:title="설정"/>
+        <item
+            android:id="@+id/item_drawer_devintro"
+            android:icon="@drawable/menu_ivc"
+            android:title="개발자소개"/>
+    </group>
+    <group>
+        <item
+            android:id="@+id/item_drawer_withdrawal"
+            android:icon="@drawable/menu_removeuser"
+            android:title="탈퇴하기"/>
+        <item
+            android:id="@+id/item_drawer_logout"
+            android:icon="@drawable/menu_logout"
+            android:title="로그아웃"/>
+    </group>
+</menu>

@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="activity"
+            type="ac.inhaventureclub.incar.activity.register.CacaoMapActivity" />
+    </data>
+
+
+<androidx.constraintlayout.widget.ConstraintLayout
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/border_line"
+    android:orientation="vertical">
+
+    <net.daum.mf.map.api.MapView
+        android:id="@+id/map_view"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="60dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_detailAdressChoice"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <FrameLayout
+        android:id="@+id/frame_layout_aim"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="24dp"
+        app:layout_constraintBottom_toBottomOf="@+id/map_view"
+        app:layout_constraintEnd_toEndOf="@+id/map_view">
+
+        <ImageView
+            android:id="@+id/imageView_compass_mint"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:visibility="invisible"
+            app:srcCompat="@drawable/compass_mint" />
+
+        <ImageView
+            android:id="@+id/imageView_aim_gray"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginBottom="24dp"
+            android:visibility="invisible"
+            app:srcCompat="@drawable/aim_gray" />
+
+        <ImageView
+            android:id="@+id/imageView_aim_mint"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:visibility="visible"
+            app:srcCompat="@drawable/aim_mint" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/tv_detailAdressChoice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        android:text="@string/cacaomap_detail_address_choice"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/imageView_backbutton"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/et_detailAdressChoice"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="15dp"
+        android:background="@drawable/border_line"
+        android:gravity="center_vertical"
+        android:hint="장소, 주소 검색"
+        android:paddingStart="15sp"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_detailAdressChoice" />
+
+    <ImageView
+        android:id="@+id/imageView_detailAdressChoice"
+        android:layout_width="20dp"
+        android:layout_height="15dp"
+        android:layout_marginEnd="16dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/et_detailAdressChoice"
+        app:layout_constraintEnd_toEndOf="@+id/et_detailAdressChoice"
+        app:layout_constraintTop_toTopOf="@+id/et_detailAdressChoice"
+        app:srcCompat="@drawable/icon_cancel" />
+
+    <Button
+        android:id="@+id/btn_detailAdressChoice"
+        android:layout_width="0dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="15dp"
+        android:background="@drawable/all_line"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/map_view" />
+
+    <ImageView
+        android:id="@+id/imageView_backbutton"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_detailAdressChoice"
+        app:layout_constraintStart_toStartOf="@+id/et_detailAdressChoice"
+        app:layout_constraintTop_toTopOf="@+id/tv_detailAdressChoice"
+        app:srcCompat="@drawable/left_arraow_back" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

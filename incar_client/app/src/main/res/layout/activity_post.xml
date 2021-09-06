@@ -1,0 +1,405 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:id="@+id/post_activity_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="45"
+        tools:context=".activity.MainPageActivity">
+
+        <!-- top section with menu and logo -->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/layout_top"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/post_btn_back"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="30dp"
+                android:background="@drawable/carpoolregister_leftarrow"
+                android:contentDescription="@drawable/carpoolregister_leftarrow"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <!-- content section -->
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="40">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <View
+                    android:id="@+id/post_view_line"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="@drawable/all_line" />
+
+                <!-- profile -->
+
+                <LinearLayout
+                    android:id="@+id/post_profile_item"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:background="#B4E5EB"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="10dp"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/post_profile_image"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/icon_user_default_profile" />
+
+                        <TextView
+                            android:id="@+id/post_name_text"
+                            android:layout_width="90dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:text="박주원 운전자" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/post_post_profile_message"
+                            android:layout_width="match_parent"
+                            android:layout_height="60dp"
+                            android:layout_margin="10dp"
+                            android:background="@drawable/post_message"
+                            android:gravity="center"
+                            android:text="안녕하세요~"
+                            />
+
+                        <LinearLayout
+                            android:id="@+id/post_btn_layout"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            >
+
+                            <TextView
+                                android:id="@+id/post_request_btn"
+                                android:layout_width="match_parent"
+                                android:layout_height="30dp"
+                                android:text="요청하기"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:layout_marginStart="10dp"
+                                android:layout_marginEnd="10dp"
+                                android:layout_marginBottom="10dp"
+                                android:background="@drawable/round_corner_blue"/>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <!-- profile) Message and Button -->
+
+                </LinearLayout>
+
+                <!-- Mapping Point-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="20dp"
+                    android:orientation="horizontal">
+
+                    <!-- Mapping Point) Origin -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginEnd="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/post_mappingpointbox"
+                        android:orientation="horizontal">
+
+                        <!-- Mappint Point \Origin ) Icon Image -->
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@+id/iv_post_originicon"
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_marginStart="10dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_weight="3"
+                                app:srcCompat="@drawable/icon_map_pin_blue" />
+
+                            <TextView
+                                android:id="@+id/tv_post_origin"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="10dp"
+                                android:layout_marginBottom="10dp"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:text="출발" />
+                        </LinearLayout>
+
+                        <!-- Mappint Point \Origin ) Where -->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="10dp"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/tv_post_origin_city"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="서울특별시" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                    <!-- Mapping Point) Destination -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginEnd="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/post_mappingpointbox"
+                        android:orientation="horizontal">
+
+                        <!-- Mappint Point \Destination ) Icon Image -->
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@+id/iv_post_desticon"
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_marginStart="10dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_weight="3"
+                                app:srcCompat="@drawable/icon_map_pin_red" />
+
+                            <TextView
+                                android:id="@+id/tv_post_dest"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="10dp"
+                                android:layout_marginBottom="10dp"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:text="도착" />
+                        </LinearLayout>
+
+                        <!-- Mappint Point \Destination ) Where -->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="10dp"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/tv_post_dest_city"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="인천광역시" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <!-- Information -->
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="20dp"
+                    android:background="@drawable/post_table"
+                    android:stretchColumns="1,3">
+
+                    <!-- Information) Purpose and Departure Date -->
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/tv_post_info_purpose"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:background="@drawable/post_table"
+                            android:gravity="center"
+                            android:padding="2dp"
+                            android:text="날짜" />
+
+                        <TextView
+                            android:id="@+id/tv_post_date_cont"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="4"
+                            android:background="@drawable/post_table"
+                            android:gravity="center"
+                            android:padding="2dp"
+                            android:scrollbarAlwaysDrawHorizontalTrack="true"
+                            android:layout_gravity="center"
+                            android:text="DATE" />
+
+                        <TextView
+                            android:id="@+id/tv_post_date"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:background="@drawable/post_table"
+                            android:gravity="center"
+                            android:padding="2dp"
+                            android:text="시간" />
+
+                        <TextView
+                            android:id="@+id/tv_post_date_time"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="4"
+                            android:background="@drawable/post_table"
+                            android:gravity="center"
+                            android:padding="2dp"
+                            android:scrollbarAlwaysDrawHorizontalTrack="true"
+                            android:text="TIME" />
+                    </TableRow>
+
+                    <!-- Information) Seating Capacity and Cost -->
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        >
+
+                        <TextView
+                            android:id="@+id/tv_post_info_etc"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:background="@drawable/post_table"
+                            android:gravity="center"
+                            android:padding="2dp"
+                            android:text="차종" />
+
+                        <TextView
+                            android:id="@+id/tv_post_info_capa_cont"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="4"
+                            android:background="@drawable/post_table"
+                            android:gravity="center"
+                            android:padding="2dp"
+                            android:text="CARTYPE" />
+
+                        <TextView
+                            android:id="@+id/tv_post_cost"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:background="@drawable/post_table"
+                            android:gravity="center"
+                            android:padding="2dp"
+                            android:text="비용/인당" />
+
+                        <TextView
+                            android:id="@+id/tv_post_cost_cont"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="4"
+                            android:background="@drawable/post_table"
+                            android:gravity="center"
+                            android:padding="2dp"
+                            android:text="COST" />
+                    </TableRow>
+
+                    <!-- Information) Etc -->
+
+
+                    <!-- Information) Word -->
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:weightSum="12">
+
+                        <TextView
+                            android:id="@+id/tv_post_info_word"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="2"
+                            android:background="@drawable/post_table"
+                            android:gravity="center"
+                            android:padding="2dp"
+                            android:text="한마디" />
+
+                        <TextView
+                            android:id="@+id/tv_post_info_word_cont"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="10"
+                            android:background="@drawable/post_table"
+                            android:gravity="center"
+                            android:padding="2dp"
+                            android:scrollbarAlwaysDrawVerticalTrack="true"
+                            android:text="" />
+
+                    </TableRow>
+
+                </TableLayout>
+
+                <!-- Map Image -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="20dp"
+                    android:orientation="vertical">
+
+                    <com.google.android.gms.maps.MapView
+                        android:id="@+id/mapView_post_map"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+</layout>

@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AssessmentGetInFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="받은 평가" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="183dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="#D8D8D8">
+
+                <LinearLayout
+                    android:layout_width="82dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/imageView3"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:src="@drawable/icon_user_default_profile" />
+
+                    <TextView
+                        android:id="@+id/textView10"
+                        android:layout_width="80dp"
+                        android:layout_height="20dp"
+                        android:text="이름" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView11"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:text="평가 코멘트" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/imageView4"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_weight="1"
+                            android:src="@drawable/rating_star_full" />
+
+                        <ImageView
+                            android:id="@+id/imageView6"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_weight="1"
+                            android:src="@drawable/rating_star_full" />
+
+                        <ImageView
+                            android:id="@+id/imageView5"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_weight="1"
+                            android:src="@drawable/rating_star_full" />
+
+                        <ImageView
+                            android:id="@+id/imageView7"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_weight="1"
+                            android:src="@drawable/rating_star_full" />
+
+                        <ImageView
+                            android:id="@+id/imageView8"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_weight="1"
+                            android:src="@drawable/rating_star_full" />
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="한 평가" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="102dp"
+                android:orientation="horizontal"
+                android:background="#D8D8D8">
+
+                <LinearLayout
+                    android:layout_width="82dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/imageView9"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:src="@mipmap/icon_user" />
+
+                    <TextView
+                        android:id="@+id/textView12"
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:text="TextView" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView13"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:text="TextView" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/imageView10"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:src="@drawable/rating_star_full" />
+
+                        <ImageView
+                            android:id="@+id/imageView11"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:src="@drawable/rating_star_full" />
+
+                        <ImageView
+                            android:id="@+id/imageView12"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:src="@drawable/rating_star_blank" />
+
+                        <ImageView
+                            android:id="@+id/imageView14"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:src="@drawable/rating_star_blank" />
+
+                        <ImageView
+                            android:id="@+id/imageView13"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:src="@drawable/rating_star_blank" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

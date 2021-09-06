@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="위치중심">
+        <item>내 위치 중심</item>
+        <item>지도 위치 중심</item>
+    </string-array>
+
+</resources>

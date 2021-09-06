@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="android.support.design.widget.AppBarLayout$ScrollingViewBehavior"
+    tools:context="ac.inhaventureclub.incar.MainActivity"
+    tools:showIn="@layout/app_bar_main"
+
+    android:id="@+id/container">
+    <!--tools:showIn="@layout/app_bar_main"-->
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/layout_searchbox"
+            layout="@layout/activity_searchbox"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginStart="0dp" />
+
+
+        <!--
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/layout_searchbox"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="1dp"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+-->
+        <!-- 스크롤 하는 내용 -->
+
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/contentmain_tablayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layout_searchbox">
+
+            <com.google.android.material.tabs.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="타세요" />
+
+            <com.google.android.material.tabs.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="태워주세요" />
+
+        </com.google.android.material.tabs.TabLayout>
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/contentmain_tablayout"
+            android:layout_alignParentEnd="true"
+            android:entries="@array/sort_order" />
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/spinner">
+
+        </ListView>
+
+
+    </RelativeLayout>
+
+
+</FrameLayout>

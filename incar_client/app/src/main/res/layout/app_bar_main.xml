@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="ac.inhaventureclub.incar.NoticeFragment"
+    android:id="@+id/layout_appbarmain">
+
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbarlayout_appbarmain_hamburger"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#ffffff"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        android:layout_alignParentTop="true">
+        <!--Toolbar-->
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar_appbarmain_hamburger"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/white"
+            app:popupTheme="@style/AppTheme.AppBarOverlay">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:id="@+id/ib_appbarmain_mainlogo"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/icon_incar_logo_with_title"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.35"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tv_notice"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:background="@drawable/red_image"
+                    android:text="4"
+                    android:gravity="center"
+                    android:textSize="8dp"
+                    android:textColor="#ffffff"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.2"
+                    android:visibility="gone"
+                   />
+
+                <Button
+                    android:id="@+id/notice_screen"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/alarm"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="1.5"
+                    app:layout_constraintStart_toEndOf="@+id/tv_notice"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <FrameLayout
+        android:id="@+id/include_contentmain"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/appbarlayout_appbarmain_hamburger"
+        android:layout_alignParentBottom="true"/>
+
+
+
+</RelativeLayout>

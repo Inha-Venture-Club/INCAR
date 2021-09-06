@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="ac.inhaventureclub.incar.activity.BackActivity"
+    android:id="@+id/layout_appbarback">
+
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbarlayout_appbarback"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        android:layout_alignParentTop="true">
+        <!--Toolbar-->
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar_appbarback"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/white"
+            app:popupTheme="@style/AppTheme.AppBarOverlay">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:id="@+id/ib_appbarback_mainlogo"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/icon_incar_logo_with_title"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.4"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <include
+        android:id="@+id/layout_appbarback_content"
+        layout="@layout/content_back"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/appbarlayout_appbarback"
+        android:layout_alignParentBottom="true" />
+
+</RelativeLayout>
